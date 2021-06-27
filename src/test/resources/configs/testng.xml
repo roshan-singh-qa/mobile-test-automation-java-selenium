@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" verbose="1">
+    <listeners>
+        <listener class-name="Reports.ExtentReporterNG"/>
+        <listener class-name="listeners.Listeners"/>
+    </listeners>
+    <test name="all-test">
+        <packages>
+            <package name="com.rk"></package>
+        </packages>
+    </test>
+    <!-- Parameters that need to be set from commandline -->
+    <!--    <parameter name="config.file" value="${config.file}"/>-->
+</suite>
